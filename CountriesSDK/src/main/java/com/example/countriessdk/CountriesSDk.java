@@ -119,8 +119,9 @@ public class CountriesSDk extends LinearLayout {
                         country.setIdd(countryResponse.getIdd());
                         country.setCurrencies(countryResponse.getCurrencies());
                         country.setRegion(countryResponse.getRegion());
-
-                        countries.add(country);
+                        if (!country.getName().contains("Palestine")) { // removing non exsisting contry
+                            countries.add(country);
+                        }
                         filteredCountries.clear();
                         filteredCountries.addAll(countries);
                         countryAdapter.addAll(countries);
