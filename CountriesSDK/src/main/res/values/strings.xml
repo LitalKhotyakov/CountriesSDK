@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Countries</string>
+    <string-array name="regions_array">
+        <item>All</item>
+        <item>Africa</item>
+        <item>Americas</item>
+        <item>Asia</item>
+        <item>Europe</item>
+        <item>Oceania</item>
+    </string-array>
+
+</resources>
+
